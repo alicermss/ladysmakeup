@@ -1,0 +1,425 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="alternative stylesheet" href="css/style.css">
+    <link rel="alternative stylesheet" href="css/responsivo.css">
+    <link rel="alternative stylesheet" href="css/nav.css">
+    <link rel="alternative stylesheet" href="css/rodapé.css"><!--link para o CSS do roda-pé do site/pagina-->
+    <link rel="alternative stylesheet" href="css/grid.css"><!--link para o CSS do grid das fotos dos produtos...-->
+    <link rel="alternative stylesheet" href="css/curtida.css">
+    <link rel="stylesheet" href="css/sacola.css">
+    <link rel="stylesheet" href="css/usuario.css">
+    <link rel="stylesheet" href="/css/login.novo.css">
+    <script src="/js/login.js"></script>
+    <title>Lábios</title>
+    <link rel="five icon" type="img.logo" href="img/logo.png">
+    <link rel="stylesheet" type="text/css" href="css/estilos.css">
+
+
+</head>
+
+<body>
+
+   <!--comeco-->
+
+ <nav>
+    <div class="pesquisa">
+        <img src="img/lupa.png" alt="">
+        <input class="input" type="text">
+    </div>
+    <!--essa div e na onde fica nosso logo-->
+    <div class="logo">
+        <img src="img/logo.PNG" alt="">
+    </div>
+  
+    <div class="usuario">
+        <div class="icones">
+            <button onclick="showModal()" class="buttonmodal"><img src="img/sacola-de-compras.png" alt=""
+                    ></button>
+            <button onclick="showLogin()" class="buttonmodal"> <img src="img/usuario.png" alt="" srcset=""
+                    ></button>
+        </div>
+    </div>
+  
+  </nav>
+  <section class="container-menu">
+    <ul class="menu">
+        <li><a href="/home.html">Home</a></li>
+        <li><a >Produtos</a>
+            <ul>
+                <li><a href="/paginas/labios-atualizando/labios.html">Lábios</a></li>
+                <li><a href="/paginas/olhos/olhos.html">Olhos</a></li>
+                <li><a href="/paginas/pele/pele.html">Pele</a></li>
+            </ul>
+        </li>
+        <li><a href="/paginas/sobre nos/sobrenos.html">Sobre Nós</a></li>
+        <li><a href="/paginas/blog-novo/blog.html">Blog</a></li>
+    </ul>
+  </section>
+  <!--fim da nav -->
+  
+  <!--começo do modal-->
+  <div class="modal" id="modal">
+    <div class="modal-content">
+        <div class="modalbtn">
+            <button onclick="closeModal()"><span class="close">X</span></button>
+        </div>
+        <!-- div responsavel pelo titulo e imagem da pagina do modal-->
+        <div id="vazia" class="sacola-vazia">
+            <img src="img/bolsa.png" alt="">
+            <!--parte do titulo sacola vazia-->
+            <div class="produto">
+                <h2>Sacola</h2>
+                <p>Itens</p>
+            </div>
+  
+            <div class="paginas">
+                <p>Sua sacola está vazia</p>
+                <p>Adicione itens para continuar</p>
+                <h1>Que tal verificar nossas coleções?</h1>
+                <ul class="menu-paginas">
+                    <li><a href="link1"># Labios</a></li>
+                    <hr>
+                    <li><a href="link2"># Pele</a></li>
+                    <hr>
+                    <li><a href="link3"># Olho</a></li>
+                    <hr>
+                </ul>
+            </div>
+        </div>
+    </div>
+  </div>
+  <!--fim do modal-->
+  
+  <button onclick="scrollToTop()" id="Voltar" title="Voltar a nav"><span class="material-symbols-outlined">
+    </span>Voltar</button>
+  
+  <!--começo do modal- login-->
+  
+  <div id="login" class="login">
+    <div class="login-content">
+
+        <div class="img-login">
+            <img src="/img/login.png" alt="login">
+            <button class="voltar" onclick="closeLogin()" id="close-login">X
+            </button>
+          </div>
+    
+    
+          <div class="login-header">
+              
+            <div class="text">
+              <h2 class="texto">FAÇA LOGIN!</h2>
+            </div>
+          </div>
+  
+  
+  
+        <div class="tela">
+            <form action="">
+                <div class="caixa">
+                    <label for="login" id="login">Nome:</label>
+                    <input type="text" id="username" required>
+                    <label for="senha" id="senha">Senha:</label>
+                    <input type="password" id="password" required>
+                    <div class="butao">
+                        <button type="button" onclick="login()">Entrar </button>
+                    </div>
+                </div> <!--fechando a div tela-->
+            </form>
+        </div> <!-- Essa aqui-->
+  
+  
+  
+    </div>
+  </div>
+  
+  <!--fim do modal login-->
+
+            <!--codigo da acessibilidade (LIBRAS) no canto da tela-->
+
+            <div vw class="enabled">
+                <div vw-access-button class="active"></div>
+                <div vw-plugin-wrapper>
+                    <div class="vw-plugin-top-wrapper"></div>
+                </div>
+            </div>
+            <script src="libras.js"></script>
+            <script>
+                new window.VLibras.Widget('https://vlibras.gov.br/app');
+            </script>
+
+            <!--fIM DESSE CODIGO-->
+
+        </div>
+
+    </section>
+
+    <!--fim da nav -->
+
+    <!--Alto constraste-->
+
+    <div class="button-contraste">
+
+
+        <button onclick="darkMode()" class="btnon" id="lampadaon">
+            <img src="img/constraste.png" alt="" class="img-altocontraste">
+        </button>
+
+        <button class="btnoff" id="lampadaoff">
+            <img src="img/constraste.png" alt="">
+        </button>
+
+    </div>
+
+
+    <!--fim do codigo do alto constraste-->
+
+    <!-- a cabeça do site, parte do carretel, titulo e botao para ir para os produtos-->
+
+    <!--parte das imagens e grid-->
+
+
+    <div class="imagem">
+        <img src="img/labios-b.png" alt="carretel foto labios">
+    </div>
+
+    <div class="subtitulo">
+        <hr size="2" align="left">
+        <h1>PRODUTOS POPULARES</h1>
+        <hr size="2" align="right">
+    </div>
+
+
+    <!--Fotos dos produtos-->
+
+    <div class="cards">
+
+
+            <!-- imagem 1 dentro do grid-->
+
+            <div class="depoimento">
+              
+                <div class="card-produto">
+                    <div class="img-produto">
+                        <img src="img/BATOM3.jpg" alt="batom5"><!--class das fotos dos produtos-->
+                    </div>
+                    <p class="descricao"> KIT BATONS TERROSOS MATTE</p>
+                    <p class="preco">R$ 89,50</p>
+                </div>
+                
+                <a class="card-button" id="1" onclick="adicionarItemSacola(this.id)" >Adicionar ao carrinho <img
+                        src="/img/carrinho.png" alt=""></a>
+            </div>
+
+
+        <!-- imagem 2 dentro do grid-->
+        <div class="depoimento">
+        
+            <div class="card-produto"><!--class para posicionar dentro do grid-->
+                <div class="img-produto">
+                    <img src="img/BATOM4.jpg" alt="batom5"><!--class das fotos dos produtos-->
+                </div>
+                <p class="descricao">KIT 4 BATONS</p><!--class das descriçoes e materiais do produto-->
+                <p class="preco">R$ 69,50</p>
+            </div>
+            <a class="card-button" id="2" onclick="adicionarItemSacola(this.id)" >Adicionar ao carrinho <img
+                    src="/img/carrinho.png" alt=""></a><!--class do botao do carrinho-->
+        </div>
+
+        <!-- imagem 3 dentro do grid-->
+        <div class="depoimento">
+          
+            <div class="card-produto"><!--class para posicionar dentro do grid-->
+                <div class="img-produto">
+                    <img src="img/BATOM3.jpg" alt="batom5"><!--class das fotos dos produtos-->
+                </div>
+                <p class="descricao">HIDRATANTE LABIAL NUDE</p><!--class das descriçoes e materiais do produto-->
+                <p class="preco">R$ 29,50</p>
+            </div>
+            <a class="card-button" id="3" onclick="adicionarItemSacola(this.id)">Adicionar ao carrinho <img
+                    src="/img/carrinho.png" alt=""></a>
+        </div>
+
+        <!-- imagem 4 dentro do grid-->
+        <div class="depoimento">
+           
+            <div class="card-produto"><!--class para posicionar dentro do grid-->
+                <div class="img-produto">
+                    <img src="img/BATOM4.jpg" alt="batom5"><!--class das fotos dos produtos-->
+                </div>
+                <p class="descricao"> BATOM ROSÉ MATTE</p><!--class das descriçoes e materiais do produto-->
+                <p class="preco">R$ 39,50</p>
+            </div>
+            <a class="card-button" id="4" onclick="adicionarItemSacola(this.id)">Adicionar ao carrinho <img
+                    src="/img/carrinho.png" alt=""></a>
+        </div>
+
+        <!--SEGUNDA PARTE DO GRID-->
+
+        <!--imagem 5 dentro do grid-->
+
+        <div class="depoimento">
+         
+            <div class="card-produto"><!--class para posicionar dentro do grid-->
+                <div class="img-produto">
+                    <img src="img/BATOM3.jpg" alt="batom5"><!--class das fotos dos produtos-->
+                </div>
+                <p class="descricao">Batom Rose Matte</p><!--class das descriçoes e materiais do produto-->
+                <p class="preco">R$ 39,50</p>
+            </div>
+            <a class="card-button" id="5" onclick="adicionarItemSacola(this.id)">Adicionar ao carrinho <img
+                    src="/img/carrinho.png" alt=""></a>
+        </div>
+
+
+        <!-- imagem 6 dentro do grid-->
+        <div class="depoimento">
+
+            <div class="card-produto"><!--class para posicionar dentro do grid-->
+                <div class="img-produto">
+                    <img src="img/BATOM4.jpg" alt="batom5"><!--class das fotos dos produtos-->
+                </div>
+                <p class="descricao">Batom Rose Matte</p><!--class das descriçoes e materiais do produto-->
+                <p class="preco">R$ 39,50</p>
+            </div>
+            <a class="card-button" id="6" onclick="adicionarItemSacola(this.id)">Adicionar ao carrinho <img
+                    src="/img/carrinho.png" alt=""></a>
+        </div>
+
+        <!-- imagem 7 dentro do grid-->
+        <div class="depoimento">
+            
+            <div class="card-produto"><!--class para posicionar dentro do grid-->
+                <div class="img-produto">
+                    <img src="img/BATOM3.jpg" alt="batom5"><!--class das fotos dos produtos-->
+                </div>
+                <p class="descricao">Batom Rose Matte</p><!--class das descriçoes e materiais do produto-->
+                <p class="preco">R$ 39,50</p>
+            </div>
+            <a class="card-button" id="7" onclick="adicionarItemSacola(this.id)">Adicionar ao carrinho <img
+                    src="/img/carrinho.png" alt=""></a>
+        </div>
+
+
+        <!-- imagem 8 dentro do grid-->
+        <div class="depoimento">
+            
+            <div class="card-produto">
+                <div class="img-produto">
+                    <img src="img/BATOM4.jpg" alt="batom5"><!--class das fotos dos produtos-->
+                </div>
+                <p class="descricao"> KIT GLOSS ROSÉ ILUMINADOR</p><!--class das descriçoes e materiais do produto-->
+                <p class="preco">R$ 110,50</p>
+            </div>
+            <a class="card-button" id="8" onclick="adicionarItemSacola(this.id)">Adicionar ao carrinho <img
+                    src="/img/carrinho.png" alt=""></a>
+            </div>
+
+             <!-- imagem 9 dentro do grid-->
+        <div class="depoimento">
+            
+            <div class="card-produto"><!--class para posicionar dentro do grid-->
+                <div class="img-produto">
+                    <img src="img/BATOM3.jpg" alt="batom5"><!--class das fotos dos produtos-->
+                </div>
+                <p class="descricao">Batom Rose Matt</p><!--class das descriçoes e materiais do produto-->
+                <p class="preco">R$ 39,50</p>
+            </div>
+            <a class="card-button" id="9" onclick="adicionarItemSacola(this.id)">Adicionar ao carrinho <img
+                    src="/img/carrinho.png" alt=""></a>
+        </div>
+
+
+        <!-- imagem 10 dentro do grid-->
+        <div class="depoimento">
+          
+            <div class="card-produto">
+                <div class="img-produto">
+                    <img src="img/BATOM4.jpg" alt="batom5"><!--class das fotos dos produtos-->
+                </div>
+                <p class="descricao">Kit Gloss Rosé Iluminador</p><!--class das descriçoes e materiais do produto-->
+                <p class="preco">R$ 110,50</p>
+            </div>
+            <a class="card-button" id="10" onclick="adicionarItemSacola(this.id)">Adicionar ao carrinho <img
+                    src="/img/carrinho.png" alt=""></a>
+            </div>
+
+
+
+    </div>
+
+    </div>
+
+
+    </div>
+
+
+    <div class="roda-pe">
+
+        <h1 class="titulo-rodape">CONTATOS</h1>
+
+        
+
+
+        <div class="contatos">
+
+            <a href="https://www.instagram.com/ladysmakeup.site/"></a> <img class="icon-contatos"
+                src="img/instagram.png" alt="instagram" id="insta">
+          
+
+            <hr>
+        </div>
+
+        <div class="valores-marca">
+
+            <a id="palavra1">SEM VIOLAÇÃO</a>
+
+            <a id="palavra2">EXCLUSIVO</a>
+
+            <img class="logo-rodape" src="img/logo.png" alt="logo-do-rodape">
+
+            <a id="palavra3">VEGANO</a>
+
+            <a id="palavra4">NATURAL</a>
+
+        </div>
+
+        <div id="hr1">
+            <hr>
+        </div>
+
+
+
+        <div class="button-final">
+            <button onclick="scrollToTop()" id="btnTop" title="Voltar ao Topo"><span class="material-symbols-outlined">
+                    VOLTAR
+                </span></button>
+        </div>
+
+        <div class="final">
+            <p>&copy; 2023 Lady's Makeup </p> <!-- Texto de direitos autorais e ano. -->
+        </div>
+    </div>
+
+
+    </div>
+    </div>
+    </div>
+
+    <script src="js/script.js"></script>
+    <script src="https://kit.fontawesome.com/998c60ef77.js" crossorigin="anonymous"></script>
+
+    <script src="./js/sacola.js"></script>
+    <script src="./js/modal.js"></script>
+    <script src="./js/login.js"></script>
+
+
+    </div>
+    </main>
+</body>
+
+</html>

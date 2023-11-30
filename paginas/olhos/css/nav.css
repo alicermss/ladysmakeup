@@ -1,0 +1,144 @@
+/*faixa de cor com a frase */
+header {
+    background-color: #c0705b;
+    color: #ffffff;
+    padding: 10px;
+    text-align: center;
+}
+
+
+/*classe pom todo erro*/
+nav {
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+}
+
+/*pesquisa do lado esquerdo da pagina*/
+
+.pesquisa {
+    margin-left: 20%;
+    display: flex;
+    align-items: center;
+    justify-content: left;
+}
+
+.pesquisa img {
+    margin: 3%;
+    width: 5%;
+}
+
+.input {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 13px;
+    padding-left: 0;
+    border: none;
+    border-bottom: 1px solid black;
+    border-radius: inherit;
+}
+
+.input:focus {
+    outline: none;
+}
+
+
+/*logo*/
+
+.logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo img {
+    width: 40%;
+    height: 80%;
+}
+
+
+
+/*Usuario clas do errop*/
+
+.usuario {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.usuario a {
+    width: 70%;
+}
+
+/* edita a classe que  esta dandio erro*/
+.icones {
+    display: flex;
+    width: 100%;
+}
+
+.icone {
+    width: 10%;
+    margin: 5%;
+}
+
+/**/
+section {
+    background-color: rgb(254, 254, 254);
+    padding: 25px;
+    display: flex;
+    justify-content: center;
+
+}
+
+/*editada a classe com erro*/
+.container-menu{
+    background-color: #c06f5b14;
+    width: 90%;
+    margin-left: 5%;
+    margin-right: 5%;
+}
+.menu {
+    display: flex;
+    position: relative;
+    
+}
+
+.menu li a {
+    margin: 30px;
+
+    color: rgb(0, 0, 0);
+}
+
+li {
+    list-style-type: none;
+}
+
+
+.menu a:hover {
+    color: #c0705b;
+}
+
+.menu li ul {
+    z-index: 1;
+    position: absolute;
+    top: 25px;
+    left: 25%;
+    display: none;
+    background-color: #c06f5b33;
+}
+
+.menu li:hover ul,
+.menu li.over ul {
+    display: block;
+}
+
+.menu li ul li {
+    display: block;
+    width: 100%;
+    background-color: transparent;
+}
+
+
+.menu li ul li a:hover {
+    color: #c0705b;
+}

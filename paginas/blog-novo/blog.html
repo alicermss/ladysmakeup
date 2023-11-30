@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog</title>
+    <link rel="stylesheet" href="css/nav.css">
+    <link rel="stylesheet" href="css/sacola.css">
+    <link rel="stylesheet" href="css/usuario.css">
+    <link rel="stylesheet" href="css/blog.css">
+    <link rel="stylesheet" href="css/rodape.css">
+    <link rel="stylesheet" href="/css/login.novo.css">
+    <script src="/js/login.js"></script>
+</head>
+
+<body>
+    <!--comeco-->
+
+    <nav>
+        <div class="pesquisa">
+            <img src="img/lupa.png" alt="">
+            <input class="input" type="text">
+        </div>
+        <!--essa div e na onde fica nosso logo-->
+        <div class="logo">
+            <img src="img/logo.PNG" alt="">
+        </div>
+
+        <div class="usuario">
+            <div class="icones">
+                <button onclick="showModal()" class="buttonmodal"><img src="img/sacola-de-compras.png" alt=""></button>
+                <button onclick="showLogin()" class="buttonmodal"> <img src="img/usuario.png" alt="" srcset=""></button>
+            </div>
+        </div>
+
+    </nav>
+    <section class="container-menu">
+        <ul class="menu">
+            <li><a href="/home.html">Home</a></li>
+            <li><a>Produtos</a>
+                <ul>
+                    <li><a href="/paginas/labios-atualizando/labios.html">Lábios</a></li>
+                    <li><a href="/paginas/olhos/olhos.html">Olhos</a></li>
+                    <li><a href="/paginas/pele/pele.html">Pele</a></li>
+                </ul>
+            </li>
+            <li><a href="/paginas/sobre nos/sobrenos.html">Sobre Nós</a></li>
+            <li><a href="/paginas/blog-novo/blog.html">Blog</a></li>
+        </ul>
+    </section>
+    <!--fim da nav -->
+
+    <!--começo do modal-->
+    <div class="modal" id="modal">
+        <div class="modal-content">
+            <div class="modalbtn">
+                <button onclick="closeModal()"><span class="close">X</span></button>
+            </div>
+            <!-- div responsavel pelo titulo e imagem da pagina do modal-->
+            <div id="vazia" class="sacola-vazia">
+                <img src="img/bolsa.png" alt="">
+                <!--parte do titulo sacola vazia-->
+                <div class="produto">
+                    <h2>Sacola</h2>
+                    <p>Itens</p>
+                </div>
+
+                <div class="paginas">
+                    <p>Sua sacola está vazia</p>
+                    <p>Adicione itens para continuar</p>
+                    <h1>Que tal verificar nossas coleções?</h1>
+                    <ul class="menu-paginas">
+                        <li><a href="link1"># Labios</a></li>
+                        <hr>
+                        <li><a href="link2"># Pele</a></li>
+                        <hr>
+                        <li><a href="link3"># Olho</a></li>
+                        <hr>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--fim do modal-->
+
+    <button onclick="scrollToTop()" id="Voltar" title="Voltar a nav"><span class="material-symbols-outlined">
+        </span>Voltar</button>
+
+    <!--começo do modal- login-->
+
+ <div id="login" class="login">
+    <div class="login-content">
+  
+
+        <div class="img-login">
+            <img src="/img/login.png" alt="login">
+            <button class="voltar" onclick="closeLogin()" id="close-login">X
+            </button>
+          </div>
+    
+    
+          <div class="login-header">
+              
+            <div class="text">
+              <h2 class="texto">FAÇA LOGIN!</h2>
+            </div>
+          </div>
+  
+  
+  
+        <div class="tela">
+            <form action="">
+                <div class="caixa">
+                    <label for="login" id="login">Nome:</label>
+                    <input type="text" id="username" required>
+                    <label for="senha" id="senha">Senha:</label>
+                    <input type="password" id="password" required>
+                    <div class="butao">
+                        <button type="button" onclick="login()">Entrar </button>
+                    </div>
+                </div> <!--fechando a div tela-->
+            </form>
+        </div> <!-- Essa aqui-->
+  
+  
+  
+    </div>
+  </div>
+  
+  <!--fim do modal login-->
+
+
+    <!--Alto constraste-->
+
+    <div class="button-contraste">
+
+
+        <button onclick="darkMode()" class="btnon" id="lampadaon">
+            <img src="img/altocontraste.png" alt="" class="img-altocontraste">
+        </button>
+
+        <button class="btnoff" id="lampadaoff">
+            <img src="img/altocontraste.png" alt="">
+        </button>
+
+    </div>
+
+
+    <!--fim do codigo do alto constraste-->
+    <!--fim da nav -->
+
+
+
+
+
+
+
+    <!--corpo do site aqui tem a div da propaganda, 3 piblicagens-->
+
+    <div class="container-propaganda">
+        <img src="img/propaganda-inovacao.PNG" alt="">
+    </div>
+
+
+    <!--sub titulo-->
+    <!--SUB TITULO LANÇAMENTOS-->
+    <div class="subtitulo">
+        <img src="img/ino.PNG" alt="">
+    </div>
+
+
+
+    <!--contem as 3 primeiras postgens-->
+
+    <div class="container-first-posts">
+
+        <div class="first-posts">
+
+            <a href="https://www.insectashoes.com/m/blog/62c88fc3d586aa6f4a70c649/existe-couro-vegano-e-sustentavel">
+                <img src="img/bolsacouro.PNG" alt="" width="300px"> </a>
+            <p>Couro Vegano</p>
+
+        </div>
+
+        <div class="first-posts">
+            <a
+                href="https://br.fashionnetwork.com/news/A-nova-revolucao-industrial-impressao-3d-e-sucesso-na-moda,382677.html">
+                <img src="img/camisa3d.PNG" alt="" width="300px"></a>
+            <p>Moda 3D</p>
+
+        </div>
+
+        <div class="first-posts">
+            <a href="https://direitosanimais.com.br/2022/12/13/varias-opcoes-de-tintas-de-cabelo-veganas/">
+                <img src="img/cabelotinta.PNG" alt="" width="300px"></a>
+            <p>Tintas</p>
+
+        </div>
+
+
+    </div>
+
+    <!---->
+
+    <div class="dicas">
+        <p>Dicas Lady´s</p>
+    </div>
+
+
+    <div class="container-makeup">
+
+        <div class="first-posts">
+            <a href="https://www.youtube.com/watch?v=Qyi8whxEAsk">
+                <img src="img/base.PNG" alt="" width="300px"></a>
+            <p>Como escolher a base</p>
+
+        </div>
+
+
+
+        <div class="first-posts">
+            <a href="https://www.youtube.com/watch?v=Qyi8whxEAsk">
+                <img src="img/esfumado.PNG" alt="" width="300px"></a>
+            <p>Esfumado perfeito</p>
+
+        </div>
+
+        <div class="first-posts">
+            <a href="https://www.youtube.com/watch?v=r7FDXqSzrvQ">
+                <img src="img/maquiagem.PNG" alt="" width="300px"></a>
+            <p>Dicas Makeup</p>
+
+        </div>
+
+
+    </div>
+
+    <div class="container-ecologia">
+        <img src="img/La.png" alt="">
+
+
+    </div>
+
+
+
+    <!--produtos veganos-->
+
+
+
+    <div class="roda-pe">
+
+        <h1 class="titulo-rodape">CONTATOS</h1>
+
+        <div class="contatos">
+
+            <a href="https://www.instagram.com/ladysmakeup.site/"></a> <img class="icon-contatos"
+                src="img/instagram.png" alt="instagram" id="insta">
+           
+
+            <hr>
+        </div>
+
+        <div class="valores-marca">
+
+            <a id="palavra1">SEM VIOLAÇÃO</a>
+
+            <a id="palavra2">EXCLUSIVO</a>
+
+            <img class="logo-rodape" src="img/logo.png" alt="logo-do-rodape">
+
+            <a id="palavra3">VEGANO</a>
+
+            <a id="palavra4">NATURAL</a>
+
+        </div>
+
+        <div id="hr1">
+            <hr>
+        </div>
+
+        <div class="final">
+            <p>&copy; 2023 Lady's Makeup </p> <!-- Texto de direitos autorais e ano. -->
+        </div>
+
+
+
+        <script src="js/sacola.js"></script>
+        <script src="./js/modal.js"></script>
+        <script src="./js/login.js"></script>
+
+
+</body>
+
+</html>

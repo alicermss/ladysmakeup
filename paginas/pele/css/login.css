@@ -1,0 +1,190 @@
+.texto {
+  align-items: center;
+}
+
+/* Estilo para o modal */
+.login {
+  display: none;
+  /* Esconde o modal por padrão */
+  position: fixed;
+  /* Posiciona o modal de forma fixa na tela */
+  z-index: 1;
+  /* Define a ordem de empilhamento */
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  /* Adiciona rolagem caso o conteúdo do modal seja maior que a tela */
+  background-color: rgba(0, 0, 0, 0.4);
+  /* Adiciona um fundo escuro semi-transparente */
+}
+
+/* Estilo para o conteúdo do modal */
+.login-content {
+  display: flex;
+  flex-direction: column;
+  width: 455px;
+  height: 700px;
+  background-color: rgb(245, 207, 207);
+  border:2px;
+  align-items: center;
+  margin: 15% auto;
+  /* Centraliza o conteúdo verticalmente e o posiciona 15% do topo da tela */
+  padding: 20px;
+  border: 1px solid #888;
+  /* Define a largura do conteúdo do modal */
+}
+
+ .img-login{
+    display:flex;
+    flex-direction: column;
+    width: 100%;
+  }
+  
+  .img-login img{
+    width: 100%;
+  }
+
+.login-header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+
+/* Estilo para o botão de fechar */
+#close-login {
+  color: #1d1313;
+  float: right;
+  font-size: 12px;
+  font-weight: bold;
+}
+
+#close-login:hover,
+#close-login:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+label {
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+input {
+  width: 100%;
+  margin-bottom: 10px;
+  padding: 10px;
+  border: 1px solid white;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+/* começando a estilizar a tela de login*/
+.tela {
+  margin-top: 5%;
+  width: 80%;
+  justify-content: center;
+  align-items: center;
+  border: 2px;
+
+}
+
+
+
+.login {
+  display: flex;
+
+
+
+
+
+
+}
+
+
+
+
+
+
+
+
+.butao {
+  margin-top: 5%;
+  display: flex;
+  justify-content: center;
+  border: solid black;
+  background-color: #c0705b;
+  color: black;
+ 
+}
+
+
+
+
+
+.texto {
+  justify-content: center;
+  color: black;
+  align-items: center;
+  font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+
+
+}
+
+.caixa input {
+  align-items: center;
+  margin: 3px;
+  border: 5px;
+  text-align: center;
+  justify-items: center;
+  color: black;
+}
+
+
+.caixa label {
+  justify-content: center;
+  color: black;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+
+
+
+form input[type="text"] form input[type="password"] {
+  width: 30px;
+  justify-content: space-between;
+  align-items: center;
+
+
+
+
+}
+
+
+
+.login-header{
+  width: 100%;
+display: flex;
+justify-content: center;
+flex-direction: row;
+position: relative;
+
+
+}
+
+.voltar{
+  position: absolute;
+  left: 0;
+  background-color: #c0705b;
+  border: solid 1px black;
+}
+

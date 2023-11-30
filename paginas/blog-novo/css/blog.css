@@ -1,0 +1,212 @@
+.container-propaganda{
+    display: flex;
+    justify-content:center ;
+    flex-direction: row;
+    margin-top: 25px;
+}
+
+
+.container-first-posts{
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    margin-top: 15px;
+    margin: 10px;
+    
+ 
+}
+
+.first-posts img{
+    margin: 20px;
+}
+
+.subtitulo img{
+    font-size: 50px;
+    margin-left: 400px;
+    margin-top: 60px;
+}
+
+
+
+
+
+/*para letras dos cards*/
+
+.first-posts p {
+    font-size: 30px;
+}
+
+
+/*edita a pagina de makeup*/
+
+
+.dicas{
+    margin-top: 60px;
+    font-size: 50px;
+    margin-left: 450px;
+}
+
+.container-makeup{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-top: 12px;
+}
+
+/*prpopaganda*/
+.container-ecologia{
+    justify-content: center;
+    flex-direction: row;
+    display: flex;
+    margin-top: 200px;
+    width: 100%;
+    height:500px ;
+  
+}
+/*fim da pagina-**/
+
+.container-footer{
+    padding: 100px;
+    background-color: #C0705B;
+    margin-top: 50px;
+    color: #C0705B;
+}
+/*propaganda inovacao*/
+
+.container-propaganda-inovacao{
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+}
+
+.titulo-vegano {
+margin-top: 200px;
+font-size: 50px;
+margin-left: 450px;
+}
+
+.linha-ecos{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-top: 60px;
+}
+
+
+                 /*LANÇAMENTOS*/
+
+                 .subtitulo{
+                    display: flex;
+                    align-items: center;
+                }
+                
+                .subtitulo h1{
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    padding: 5%;
+                
+                }
+                
+                .subtitulo .tons{
+                    display: flex;
+                    justify-content: center;
+                    padding: 0; 
+                    width: 60%;  
+                     
+                }
+                                
+                .subtitulo hr{
+                    display: flex;
+                    width: 40%;
+                    margin: 0%;
+                }
+                
+                .produtos{
+                    display: flex;
+                    justify-content: space-evenly;
+                    margin-bottom: 10%;
+                    margin-top: -5%;
+                }
+                
+                .prod-lancamento{
+                    display: flex;
+                    flex-direction: column;
+                    height: 55vh;
+                    width: 18%; 
+                  }
+                  
+                  .curti{
+                    display: flex;
+                    align-items: center;
+                    margin: 5%;
+                    justify-content: right;
+                  }
+                  
+                  .curti img{
+                    width: 20px;
+                    height: 20px;
+                    margin-right: 5px;
+                  }
+                  
+                  .card-produto{
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    justify-content: center;
+                    flex-wrap: wrap;
+                  }
+                  
+                  .img-produto{
+                    width: 70%;
+                    height: 50%;
+                    margin-bottom: 5%;
+                    flex-grow: 1;
+                    transition: transform 1s linear;
+                  }
+                  
+                
+                  .img-produto img{
+                     width: 100%;
+                     object-fit: cover;
+                  }
+                  
+                  
+                  .descricao{
+                    font-size: 20px;
+                    margin-bottom: 2%;
+                    color: black;
+                  }
+                  .preco{
+                    font-size: 20px;
+                    margin-top: 0;
+                    color:#c0705b;
+                  }
+                  
+                  .card-button{
+                    display: flex;
+                     margin:  0 10% 10% 10%;
+                     padding: 2%;
+                     justify-content: center;
+                     text-decoration: none;
+                     align-items: center;
+                     font-size: medium;
+                     text-align: center;
+                     border-radius: 1.5px;
+                     background-color: #fff;
+                     color: #000000;
+                     border: solid 2px #C0705B ;
+                  }
+                  
+                  .card-button:hover{
+                    background-color: #C0705B;
+                    color: #fff;
+                  }
+                  
+                  .card-button img{
+                    width: 30px;
+                    height: 30px;
+                    margin-left: 5%;
+                  }
+
+                  

@@ -1,0 +1,19 @@
+  /*CORAÇÃO PARA CURTIDA DO CLIENTE CASO GOSTE DO PRODUTO*/
+  
+  .curti{
+    display: flex;
+    align-items: center;
+    margin: 5%;
+    justify-content: right;
+  }
+  
+  .curti img{
+    width: 20px;
+    height: 20px;
+    margin-right: 5px;
+  }
+
+.fi {
+   color: black;
+   cursor: pointer;
+}

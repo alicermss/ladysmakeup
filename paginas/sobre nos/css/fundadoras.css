@@ -1,0 +1,46 @@
+.container-fundadoras{
+display: flex;
+justify-content: center;
+margin-top: 100px;
+border-radius: 20px;
+}
+
+.p {
+text-align: center;
+display: flex;
+
+
+}
+
+.titulo-fundadoras{
+    margin-top: 100px;
+    display: flex;
+    justify-content: center;
+    font-size: 30px;
+
+
+}
+.container-fundadoras p {
+
+text-align: center;
+
+
+}
+.titulo-quemsomos{
+    font-size: 35px;
+}
+.texto p{
+    font-size: 25px;
+}
+
+
+.container-fundadoras img{
+    height: 200px;
+    width: 200px;
+    margin: 12px;
+    border-radius: 10vw;
+}
+
+.container-fundadoras p{
+    font-size: 30px;
+}

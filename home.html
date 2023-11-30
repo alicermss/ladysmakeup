@@ -1,0 +1,471 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/slider.css">
+  <link rel="stylesheet" href="css/rodape.css">
+
+  <title>home pag</title>
+
+
+  <link rel="five icon" type="img.logo" href="img/logo.png">
+  <link rel="stylesheet" type="text/css" href="css/estilos.css">
+  <link rel="stylesheet" href="css/nav.css"><!--feito-->
+  <link rel="stylesheet" href="css/sacola.css"><!--feito-->
+  <link rel="stylesheet" href="css/ussuario.css">
+  <link rel="stylesheet" href="css/login.novo.css">
+  <script src="js/login.js"></script>
+
+
+
+</head>
+
+<body>
+
+  <!--comeco-->
+
+  <nav>
+    <div class="pesquisa">
+      <img src="img/lupa.png" alt="">
+      <input class="input" type="text">
+    </div>
+    <!--essa div e na onde fica nosso logo-->
+    <div class="logo">
+      <img src="img/logo.PNG" alt="">
+    </div>
+
+    <div class="usuario">
+      <div class="icones">
+        <button onclick="showModal()" class="buttonmodal"><img src="img/sacola-de-compras.png" alt=""></button>
+        <button onclick="showLogin()" class="buttonmodal"> <img src="img/usuario.png" alt="" srcset=""></button>
+      </div>
+    </div>
+
+  </nav>
+  <section class="container-menu">
+    <ul class="menu">
+      <li><a href="/home.html">Home</a></li>
+      <li><a>Produtos</a>
+        <ul>
+          <li><a href="./paginas/labios-atualizando/labios.html">Lábios</a></li>
+          <li><a href="./paginas/olhos/olhos.html">Olhos</a></li>
+          <li><a href="./paginas/pele/pele.html">Pele</a></li>
+        </ul>
+      </li>
+      <li><a href="./paginas/sobre nos/sobrenos.html">Sobre Nós</a></li>
+      <li><a href="./paginas/blog-novo/blog.html">Blog</a></li>
+
+    </ul>
+  </section>
+  <!--fim da nav -->
+
+  <!--começo do modal-->
+  <div class="modal" id="modal">
+    <div class="modal-content">
+      <div class="modalbtn">
+        <button onclick="closeModal()"><span class="close">X</span></button>
+      </div>
+      <!-- div responsavel pelo titulo e imagem da pagina do modal-->
+      <div id="vazia" class="sacola-vazia">
+        <img src="img/bolsa.png" alt="">
+        <!--parte do titulo sacola vazia-->
+        <div class="produto">
+          <h2>Sacola</h2>
+          <p>Itens</p>
+        </div>
+
+        <div class="paginas">
+          <p>Sua sacola está vazia</p>
+          <p>Adicione itens para continuar</p>
+          <h1>Que tal verificar nossas coleções?</h1>
+          <ul class="menu-paginas">
+            <li><a href="link1"># Labios</a></li>
+            <hr>
+            <li><a href="link2"># Pele</a></li>
+            <hr>
+            <li><a href="./paginas/olhos/olhos.html"># Olhos</a></li>
+            <hr>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!--fim do modal-->
+
+  <!--começo do modal- login-->
+
+  <div id="login" class="login">
+    <div class="login-content">
+
+      <div class="img-login">
+        <img src="/img/login.png" alt="login">
+        <button class="voltar" onclick="closeLogin()" id="close-login">X
+        </button>
+      </div>
+
+
+      <div class="login-header">
+          
+        <div class="text">
+          <h2 class="texto">FAÇA LOGIN!</h2>
+        </div>
+      </div>
+
+
+
+      <div class="tela">
+        <form action="">
+          <div class="caixa">
+            <label for="login" id="login">Nome:</label>
+            <input type="text" id="username" required>
+            <label for="senha" id="senha">Senha:</label>
+            <input type="password" id="password" required>
+            <div class="butao">
+              <button type="button" onclick="login()">Entrar </button>
+            </div>
+          </div> <!--fechando a div tela-->
+        </form>
+      </div> <!-- Essa aqui-->
+
+
+
+    </div>
+  </div>
+
+  <!--fim do modal login-->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <!--fim da nav -->
+
+  <!--Alto constraste-->
+
+  <div class="button-contraste">
+
+
+    <button onclick="darkMode()" class="btnon" id="lampadaon">
+      <img src="img/altocontraste.png" alt="" class="img-altocontraste">
+    </button>
+
+    <button class="btnoff" id="lampadaoff">
+      <img src="img/altocontraste.png" alt="">
+    </button>
+
+  </div>
+
+
+  <!--fim do codigo do alto constraste-->
+
+
+  </section>
+  <!--fim da nav -->
+
+
+
+
+  <!--começo do modal-->
+
+
+  <button onclick="scrollToTop()" id="Voltar" title="Voltar a nav"><span class="material-symbols-outlined">
+    </span>Topo</button>
+  <script src="script.js"></script>
+
+  <!--fim do modal-->
+
+
+  <!--fim da nav -->
+
+
+
+  <!--COMEÇO DO SLIDE-->
+  <div class="container">
+
+    <div class="slider">
+
+      <div class="sliders">
+        <!--radio buttons (as bolinhas)-->
+        <input type="radio" name="radio-btn" id="radio1">
+        <input type="radio" name="radio-btn" id="radio2">
+
+        <!--slide images-->
+        <div class="slide first">
+          <img src="img/slide-olho.png" alt="ft1">
+          <img src="img/responsivo-olho.png" alt="ft1">
+        </div>
+
+        <div class="slide">
+          <img src="img/slide-gloss.png" alt="ft2">
+          <img src="img/responsivo-gloss.png" alt="ft2">
+        </div>
+
+
+        <!--bolinhas de navegação-->
+        <div class="navegacao-auto">
+          <div class="auto-bnt1"></div>
+          <div class="auto-bnt2"></div>
+
+        </div>
+
+      </div>
+
+      <div class="manual-navegacao">
+        <label for="radio1" class="manual-bnt"></label>
+        <label for="radio2" class="manual-bnt"></label>
+
+      </div>
+
+    </div>
+
+  </div>
+  <!--FIM DO SLIDE-->
+
+
+  <!--COLEÇÕES-->
+  <div class="colecoes">
+    <div class="item"> <img src="img/pele.c2.jpg" alt="colecao1">
+      <h1><a href="./paginas/pele/pele.html">PELE</a></h1>
+      <p>produtos direcionados a base da<br> sua maquiagem</p>
+    </div>
+
+    <div class="item"> <img src="img/batom.c2.jpg" alt="colecao2">
+      <h1><a href="./paginas/labios-atualizando/labios.html">LÁBIOS</a></h1>
+      <p>dê cor e realce seus lábios através<br> de nossos batons </p>
+    </div>
+
+    <div class="item"> <img src="img/olhos.jpg" alt="colecao3">
+      <h1><a href="./paginas/olhos/olhos.html">OLHOS</a></h1>
+      <p>conceda poder ao seu olhar<br> do seu melhor jeito </p>
+    </div>
+
+    <div class="item"> <img src="img/blog3.png" alt="colecao4">
+      <h1><a href="./paginas/blog-novo/blog.html">NOSSO BLOG</a></h1>
+      <p>veja nossas postagens e dicas de<br> maquiagem especificamente para você</p>
+    </div>
+
+
+  </div>
+
+  <!--COLEÇÕES-->
+
+
+
+  <!--SUB TITULO LANÇAMENTOS-->
+  <div class="subtitulo">
+    <hr size="2" align="left">
+    <h1>LANÇAMENTOS</h1>
+    <hr size="2" align="right">
+  </div>
+
+
+  <div class="produtos">
+
+    <div class="prod-lancamento">
+      <div class="curti"><!--class do coracao da curtida-->
+        <img src="img/curtida.png" height="28">
+      </div>
+
+      <div id="prod1" class="card-produto"><!--class para posicionar dentro do grid-->
+        <div class="img-produto">
+          <img src="img/batom1.png" alt="produto-f" onmouseover="this. src='img/boca1.jpg'"
+            onmouseout="this. src='img/batom1.png'"><!--class das fotos dos produtos-->
+        </div>
+
+        <p class="descricao1">BATOM ROSE MATTE</p><!--class das descriçoes e materiais do produto-->
+        <p class="preco">R$ 39,50</p>
+      </div>
+
+      <button class="card-button" id="1" onclick="adicionarItemSacola(this.id)">Adicionar Ao Carrinho
+      </button><!--class do botao do carrinho-->
+    </div>
+
+
+    <div class="prod-lancamento">
+      <div class="curti"><!--class do coracao da curtida-->
+        <img src="img/curtida.png" height="28">
+      </div>
+
+      <div class="card-produto"><!--class para posicionar dentro do grid-->
+        <div class="img-produto">
+          <img src="img/batom2.png" alt="produto-f" onmouseover="this. src='img/boca2.jpg'"
+            onmouseout="this. src='img/batom2.png'"><!--class das fotos dos produtos-->
+        </div>
+
+        <p class="descricao1">BATOM ROSE MATTE</p><!--class das descriçoes e materiais do produto-->
+        <p class="preco">R$ 39,50</p>
+      </div>
+
+      <button class="card-button" id="2" onclick="adicionarItemSacola(this.id)">Adicionar no carrinho
+      </button><!--class do botao do carrinho-->
+    </div>
+
+
+
+    <div class="prod-lancamento">
+      <div class="curti"><!--class do coracao da curtida-->
+        <img src="img/curtida.png" height="28">
+      </div>
+
+      <div class="card-produto"><!--class para posicionar dentro do grid-->
+        <div class="img-produto">
+          <img src="img/batom3.png" alt="produto-f" onmouseover="this. src='img/boca3.jpg'"
+            onmouseout="this. src='img/batom3.png'"><!--class das fotos dos produtos-->
+        </div>
+
+        <p class="descricao1">BATOM ROSE MATTE</p><!--class das descriçoes e materiais do produto-->
+        <p class="preco">R$ 39,50</p>
+      </div>
+
+      <button class="card-button" id="3" onclick="adicionarItemSacola(this.id)">Adicionar no
+        carrinho</button><!--class do botao do carrinho-->
+    </div>
+
+
+
+    <div class="prod-lancamento">
+      <div class="curti"><!--class do coracao da curtida-->
+        <img src="img/curtida.png" height="28">
+      </div>
+
+      <div class="card-produto"><!--class para posicionar dentro do grid-->
+        <div class="img-produto">
+          <img src="img/batom4.png" alt="produto-f" onmouseover="this. src='img/boca4.jpg'"
+            onmouseout="this. src='img/batom4.png'"><!--class das fotos dos produtos-->
+        </div>
+
+        <p class="descricao1">BATOM ROSE MATTE</p><!--class das descriçoes e materiais do produto-->
+        <p class="preco">R$ 39,50</p>
+      </div>
+
+      <button class="card-button" id="4" onclick="adicionarItemSacola(this.id)">Adicionar no carrinho
+      </button><!--class do botao do carrinho-->
+    </div>
+
+  </div>
+
+
+  <!--SUB TITULO DESCUBRA SEU TOM-->
+  <div class="subtitulo">
+    <hr size="2" align="left">
+    <h1 class="tons">DESCUBRA SUA COR IDEAL!</h1>
+    <hr size="2" align="right">
+  </div>
+
+  <div class="tons-cards">
+    <div class="tons">
+      <img src="img/ft-duda.png" alt="tom1" onmouseover="this. src='img/duda-cor.png'"
+        onmouseout="this. src='img/ft-duda.png'">
+      <div class="claro">CLARO</div>
+    </div>
+
+    <div id="tons1">
+      <img src="img/ft-gi1.c.jpg" alt="tom2" onmouseover="this. src='img/gi-cor.png'"
+        onmouseout="this. src='img/ft-gi1.c.jpg'">
+      <div class="m-claro">MÉDIO CLARO</div>
+    </div>
+
+    <div class="tons">
+      <img src="img/ft-nat.c.jpg" alt="3" onmouseover="this. src='img/nat-cor.png'"
+        onmouseout="this. src='img/ft-nat.c.jpg'">
+      <div class="medio">MÉDIO</div>
+    </div>
+
+    <div id="tons2">
+      <img src="img/ft-alisse.c.jpg" alt="4" onmouseover="this. src='img/alisse-cor.png'"
+        onmouseout="this. src='img/ft-alisse.c.jpg'">
+      <div class="m-escuro">MÉDIO ESCURO</div>
+    </div>
+
+    <div class="tons">
+      <img src="img/ft-gra.c.jpg" alt="5" onmouseover="this. src='img/grazi-cor.png'"
+        onmouseout="this. src='img/ft-gra.c.jpg'">
+      <div class="escuro">ESCURO</div>
+    </div>
+
+
+  </div>
+  <script src="js/script.js"></script>
+
+
+  <!--BANNER-->
+  <div class="banner">
+    <img src="img/banner.png">
+  </div>
+
+
+  <!--INSTAGRAM-->
+  <div class="insta">
+    <h1 class="h1">@LADYSMAKEUP</h1>
+
+  </div>
+  <div class="posts">
+    <img src="img/ft-insta1.c.jpg">
+    <img src="img/boca3.c.jpg">
+    <img src="img/ft-insta3.c.jpg">
+  </div>
+
+  <div class="bt-insta">
+    <li><a href="https://www.instagram.com/ladysmakeup.site/"><button>siga-nos no instagram</button></a></li>
+  </div>
+
+
+  <!--RODAPÉ-->
+  <section class="roda-pe">
+    <h1>CONTATOS</h1>
+
+    <div class="contatos">
+      <li><a href="https://www.instagram.com/ladysmakeup.site/"></a> <img class="icon-contatos" src="img/instagram.png"
+          alt="instagram" id="insta">
+      
+        <hr>
+    </div>
+
+    <div class="valores-marca">
+
+      <a id="palavra1">SEM VIOLAÇÃO</a>
+
+      <a id="palavra2">EXCLUSIVO</a>
+
+      <img class="logo-rodape" src="img/logo.png" alt="logo-do-rodape" height="120px" width="120px">
+
+      <a id="palavra3">VEGANO</a>
+
+      <a id="palavra4">NATURAL</a>
+
+    </div>
+
+    <div id="hr1">
+      <hr>
+    </div>
+
+    <button onclick="scrollToTop()" id="btnTop" title="Voltar ao Topo"><span class="material-symbols-outlined">
+        VOLTAR
+      </span></button>
+
+    <div class="final">
+      <p>&copy; 2023 Lady's Makeup </p> <!-- Texto de direitos autorais e ano. -->
+    </div>
+
+    <script src="js/sacola.js"></script>
+    <script src="./js/modal.js"></script>
+    <script src="./js/login.js"></script>
+    <script src="js/script.js" defer></script>
+    <script src="js/slider.js" defer></script>
+</body>
+
+</html>

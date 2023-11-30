@@ -1,0 +1,138 @@
+/*ESTILIZAÇÃO DO VLIBRAS*/
+
+.access-button {
+    width: 40px!important;
+    height: 50px!important;
+    z-index: 1!important;
+    border-radius: 15px!important;
+    border: 1.5px solid #ddd!important;
+}
+
+
+@media only screen and (max-device-width: 800px){
+
+  .imagem{
+    display: flex;
+    justify-content: center;
+ }
+ 
+ .imagem img{
+    margin-top: 0.1%;
+    margin: auto;
+    width: 50%; /*largura*/
+    height: 30%; 
+ }
+ 
+
+}
+
+/*COMECO DA ESTILIZAÇAO DO ALTO-CONTRASTE*/
+
+.button-contraste {
+    display: flex;
+    width: 45px;
+    padding: 5px;
+    border: none;
+    border-radius: 9%;
+    cursor: pointer;
+    background-color: #004bfbcc; 
+    color: RGB( 0, 0, 0);
+    z-index: 1;
+    position: fixed;
+    left: 0;
+  }
+  
+  .finish {
+    display: none;
+    flex-direction: column;
+    gap: 10px;
+  }
+  .finish button {
+    text-align: center;
+  }
+  
+  img {
+    width: 35px;
+  }
+  
+  .img-altocontraste{
+    border-radius: 20%;
+  }
+  
+  .dark-mode {
+    background-color: black;
+    color: aliceblue;
+  }
+  
+  .dark-mode .roda-pe{
+    background-color: #754B2F;
+  }
+  
+  .dark-mode .container-menu{
+    background-color: #8e5431;
+  }
+  
+  .dark-mode  .card-button:hover{
+    background-color:  #8e5431;
+    color: #FFF;
+  }
+  
+  .dark-mode .curti img{
+    background-color: #ddd;
+  
+  }
+  
+  
+  .light-mode {
+    background-color: #ffffffcc;
+    color: black;
+  }
+  .light-mode main {
+    background-color: aliceblue;
+    padding: 10px;
+    border-radius: 20px;
+    width: 50%;
+    max-width: 25%;
+    min-height: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .btnoff{
+    background-color: #8a6b56; /*BOTÃO DO ALTO CONTRASTE MODO ESCURO*/
+    border: none;
+  }
+  .btnon{
+    background-color: transparent;  /*BOTÃO DO ALTO CONTRASTE MODO CLARO*/
+  
+  }
+  
+  .btnoff .img{
+     border-radius: 20%;
+  }
+  header{
+    height: 20vh;
+    margin-top: 2%;
+    margin-left: 90%;
+    padding-bottom: 20px;
+  
+  }
+  .dark-mode main {
+    background-color: black;
+    padding: 10px;
+    border: 1px solid white;
+    border-radius: 20px;
+    width: 100%;
+    max-width: 25%;
+    min-height: 70%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .dark-mode #voz{
+    background-color: black;
+  }
+  
+  
+  /*FIM ALTO CONTRASTE*/

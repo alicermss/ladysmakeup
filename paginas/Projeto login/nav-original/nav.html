@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/nav.css">
+    <link rel="stylesheet" href="css/sacola.css">
+    <link rel="stylesheet" href="css/usuario.css">
+    <link rel="stylesheet" href="css/login.css">
+
+</head>
+
+<body>
+    <!--comeco-->
+
+
+    <nav>
+        <div class="pesquisa">
+            <img src="img/lupa.png" alt="">
+            <input class="input" type="text">
+        </div>
+        <!--essa div e na onde fica nosso logo-->
+        <div class="logo">
+            <img src="img/logo.PNG" alt="">
+        </div>
+
+        <div class="usuario">
+
+            <div class="icones">
+                <button onclick="showModal()" class="buttonmodal"><img src="img/sacola-de-compras.png" alt=""
+                        width="30px"></button>
+                <button onclick="showLogin()" class="buttonmodal"> <img src="img/usuario.png" alt="" srcset=""
+                        width="30px"></button>
+            </div>
+        </div>
+
+    </nav>
+    <section>
+        <ul class="menu">
+            <li><a href="link1">Home</a></li>
+            <li><a >Produtos</a>
+                <ul>
+                    <li><a href="#">Labios</a></li>
+                    <li><a href="#">Olhos</a></li>
+                    <li><a href="#">Pele</a></li>
+                </ul>
+            </li>
+            <li><a href="link3">Sobre nos</a></li>
+            <li><a href="link4">Blog</a></li>
+        </ul>
+    </section>
+    <!--fim da nav -->
+
+    <!--começo do modal-->
+
+    <div class="modal" id="modal">
+        <div class="modal-content">
+            <div class="modalbtn">
+                <button onclick="closeModal()"><span class="close">&times;</span></button>
+            </div>
+            <!-- div responsavel pelo titulo e imagem da pagina do modal-->
+            <div class="sacola-vazia">
+                <img src="img/bolsa-de-compras (1).png" alt="">
+
+                <!--parte do titulo sacola vazia-->
+
+                <p>Sua sacola está vazia</p>
+
+                <!--div responsavel por listar os produtos-->
+                <div class="produtos">
+
+                    <p>Coleção</p>
+
+                    <ul style="list-style: none;" class="menu-paginas">
+                        <li><a href="link1">#Labios</a></li>
+                        <li><a href="link2">#Pele</a></li>
+                        <li><a href="link3">#Olho</a></li>
+
+                    </ul>
+
+
+                </div>
+
+
+            </div>
+        </div>
+    </div>
+    <button onclick="scrollToTop()" id="Voltar" title="Voltar a nav"><span class="material-symbols-outlined">
+        </span>Voltar</button>
+
+    <!--fim do modal-->
+
+
+
+    <!--começo do modal- login-->
+
+    <div id="login" class="login">
+        <div class="login-content">
+
+            <div class="img-login">
+                <img src="/img/login.png" alt="login">
+            </div>
+ 
+
+            <div class="login-header">
+                <div class="voltar">
+                    <button onclick="closeLogin()" id="close-login">X
+                    </button>
+                </div>
+                <div class="text">
+                    <h2 class="texto">FAÇA LOGIN!</h2>
+                </div>
+            </div>
+
+
+
+            <div class="tela">
+                <form action="">
+                    <div class="caixa">
+                        <label for="login" id="login">Nome:</label>
+                        <input type="text" id="username" required>
+                        <label for="senha" id="senha">Senha:</label>
+                        <input type="password" id="password" required>
+                        <div class="butao">
+                            <button type="button" onclick="login()">Entrar </button>
+                        </div>
+                    </div> <!--fechando a div tela-->
+                </form>
+            </div> <!-- Essa aqui-->
+
+
+
+        </div>
+    </div>
+
+    <!--fim do modal login-->
+    <script src="./js/script.js"></script>
+    <script src="./js/login.js"></script>
+</body>
+
+</html>

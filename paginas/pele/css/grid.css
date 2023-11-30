@@ -1,0 +1,188 @@
+/*SERVIÇOS - GRID DOS PRODUTOS A VENDA DO SITE*/
+
+.servi a{
+
+    text-decoration: none;/* color: #0b0b0b;*/
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+  }
+  
+  .servi a:hover{
+    color: #E6B0AA;
+  }
+  
+  
+  #serviços{
+    display: grid;
+    flex-direction: row;
+    align-items: auto;
+    padding: 30px;
+  }
+  
+  #serviços div{
+    display: grid;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin-top: 30px;
+    flex-grow: 1;
+    flex-basis: 150px;
+    padding: 0 10px;
+  
+  }
+  
+  #serviços img{
+    width: 50%;
+  }
+ 
+  /*COMPOSIÇÃO QUE COMPORTA AS FOTOS DENTRO DO GRID*/
+
+  .cards{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    gap: 20px;
+    padding: 20px;
+    margin-top: -4%;  
+  }
+
+.cards .light-mode{
+  background-color: #ffffffcc;
+  color: black;
+}
+
+.cards .dark-mode{
+  background-color: black;
+  color: aliceblue;
+}
+
+  
+  /*400px TAMANHO*/
+  
+  .depoimentos{
+/*  border: 1px solid #000000;*/
+    display: flex;
+    flex-direction: column;
+  }
+
+  .depoimento{
+    border: 2px solid #e6b0aaa8;
+    height: 100%;
+
+  }
+
+  /*CORAÇÃO PARA CURTIDA DO CLIENTE CASO GOSTE DO PRODUTO*/
+  
+  .curti{
+    display: flex;
+    align-items: center;
+    margin: 3%;
+    justify-content: right;
+  }
+  
+  .curti img{
+    width: 20px;
+    height: 20px;
+    margin-right: 5px;
+  } 
+  
+
+  
+
+
+  /*ELEMENTO QUE COMPORTA AS IMAGENS E SEUS ELEMENTOS (BOTÕES, FLEXBOX, ...)*/
+  .card-produto{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 100%;
+    height: 67%;
+  }
+  
+  .img-produto{
+    display: flex;
+    width: 60%;
+    height: 30%;
+    flex-grow: 1;
+    transition: transform 1s linear;
+    justify-content: center;
+
+    
+  }
+  
+  .img-produto img{
+    width: 50%;
+    height: 100%;
+     object-fit: cover;
+  
+  }
+  
+  
+  .img-poduto:hover{
+     transform: scale(1.1);
+     filter: none;
+  }
+  /*TEXTO PARA DESCRIÇÃO DOS PRODUTOS E PREÇOS*/
+  .descricao{
+    font-size: 40px;
+    margin-bottom: 2%;
+    color: #000000;
+  }
+  .preco{
+    font-size: 20px;
+    margin-top: 0.5%;
+  }
+
+  .descricao .light-mode{
+    background-color: #ffffffcc;
+    color: black;
+  }
+
+  .descricao .dark-mode{
+    background-color: black;
+    color: aliceblue;
+  }
+
+  .preco .light-mode{
+    background-color: #ffffffcc;
+    color: black;
+  }
+
+  .preco .dark-mode{
+    background-color: black;
+    color: aliceblue;
+  }
+
+  /*SECTION-DIV DOS BOTÕES*/
+  
+  .card-button{
+    display: flex;
+     margin:  0 10% 10% 10%;
+     padding: 3%;
+     justify-content: center;
+     text-decoration: none;
+     align-items: center;
+     font-size: medium;
+     text-align: center;
+     border-radius: 1.5px;
+     background-color: #fff;
+     color: #000000;
+     border: solid 2px #C0705B;
+     margin-top: 3%;
+  }
+  
+  .card-button:hover{
+    background-color: #C0705B;
+    color: #FFF;
+  }
+  
+  .card-button img{
+    width: 25px;
+    height: 25px;
+    margin-left: 5%;
+  }
+  
+  
+  

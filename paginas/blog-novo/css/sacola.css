@@ -1,0 +1,214 @@
+
+.produto{
+    display: none;
+    flex-direction: column;
+    margin-top: 10%;
+}
+
+.saloca{
+    display: flex;
+    justify-content: right;
+    align-items: start;
+    margin-top: 10%;
+
+}
+.saloca button{
+    background-color: transparent;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    margin-left: 10%;
+}
+.saloca div{
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+    align-items: start;
+    margin-left: 5%;
+}
+.prod-img {
+    margin-top: 0 !important;
+    width: 80px !important;
+    height: 80px !important;
+}
+.name{
+    margin-left: 10px;
+    font-size: 18px;
+    color: #000000;
+}
+.preco{
+    margin-left: 10px;
+    font-size: 15px;
+    color: #000000;
+}
+
+.modal-content{
+    padding-left: 10%;
+}
+/*sacola vazia imagesacola-vaziam */
+
+.sacola-vazia{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.sacola-vazia img{
+    width: 30%;
+    height: 30%;
+    margin-top: 5%;
+}
+
+/*edita o titulo*/
+
+/*edita a div produtos*/
+
+.paginas{
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+    align-items: start;
+    margin-top: 10%;
+}
+
+.paginas p{
+    font-size: 15px;
+    color: #000000;
+}
+
+.paginas h1{
+    margin-top: 10%;
+    margin-bottom: 10%;
+    font-size: 20px;
+    color: #c0705b;
+}
+
+/*edita os links*/
+.menu-paginas{
+color: #000000;
+direction: ltr;
+display: flex;
+flex-direction: column;
+
+ }
+
+.menu-paginas li a {
+    color: #000000;
+
+}
+li a{
+    text-decoration: none;
+    font-size: 20px;
+
+}
+
+
+/*modal*/
+
+/*botao voltar do modal*/
+
+#Voltar{
+    display: none;
+    /*deixa o botao oculto*/
+    position: fixed;
+    bottom: 20px;
+    right: 30px;
+    z-index: 99;
+    border: none;
+    outline: none;
+    background-color: #c0705b;
+    color: white;
+    cursor: pointer;
+    padding: 15px;
+    border-radius: 50%;
+    justify-content: center;
+    align-items: center;
+
+}
+
+#Voltar:hover{
+    background-color: #c0705b;
+}
+
+/*muda o modal para a direita*/
+
+.modal{
+    display: none;
+    position: fixed;
+    z-index: 1;
+    padding-top: 200px;
+    right: 0;
+    top: 0;
+    width: 300px;
+    height: 100%;
+    overflow: auto;
+    background-color: #ffffff;
+    /*coloca sombra no modal*/
+    box-shadow: 10px 0 50px ;
+    
+}
+.menu-paginas{
+    width: 80%;
+}
+
+.menu-paginas hr{
+    margin-top: 10px;
+    width: 100%;
+    border: -1px solid #000000;
+}
+
+
+.menu-paginas li{
+    list-style-type: none;
+    width: 100%;
+}
+
+.menu-paginas li a{
+    color: #000000;
+    text-decoration: none;
+    font-size: 20px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.menu-paginas li a:hover{
+    color: #c0705b;
+}
+
+.buttonmodal{
+    background-color: #ffffff;
+    color: rgb(242, 244, 246);
+    padding: 10px 20px;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+
+}
+
+.modalbtn{
+    position: absolute;
+    top: 10%;
+    right: 0;
+    display: flex;
+    justify-content: right;
+    align-items: end;
+    margin-bottom: 10px;
+}
+.modalbtn button{
+    
+    margin-right: 10px;
+    background-color: transparent;
+}  
+.modalbtn button:hover{
+    cursor: pointer;
+    background-color: #c06f5b12;
+}
+
+.close{
+    color: #c0705b;
+    font-size: 28px;
+    padding: 10px;
+    font-weight: bold;
+}

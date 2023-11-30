@@ -1,0 +1,198 @@
+/*PARTE DOS CONTATOS NO RODA-PE*/
+
+
+.contatos{ /*DIV QUE PEGA OS ELEMENTOS DENTRO DO RODAPE*/
+    width: 100%;
+    height: 30px;
+
+  }
+
+.contatos .light-mode{
+  background-color: #ffffffcc;
+  color: black;
+  background-color: #C0705B;
+}
+
+.contatos .dark-mode{
+  background-color: black;
+  color: aliceblue;
+  background-color: #C0705B;
+}
+  
+  .icon-contatos{
+    margin-top: -7%;
+     margin: 7px;
+     align-items: center;
+     text-align: center;
+     width: 40px; /*largura da img*/
+     height: 40px; /*tamanho da img*/
+     font-size: medium;
+     margin-right: 3%;
+   
+  }
+  
+  .icon-contatos:hover{
+     box-shadow: none;
+     background-color: #d3b0ac;
+     border-radius: 30%;
+     
+  }
+
+  .icon-contatos img .light-mode{
+     color: #fff;
+     background-color: #000000;
+  }
+
+  .icon-contatos img .dark-mode{
+    background-color: #fff;
+    color: #000000;
+  }
+
+
+#whatsApp{
+   border-radius: 50%;  
+}
+
+#tiktok{
+  border-radius: 100%;
+}
+
+#facebook{
+  border-radius: 60%;
+}
+
+.titulo-rodape{
+
+  margin-bottom: 20px;
+
+}
+
+/* SECTION QUE CLASSIFICA TODO O RODAPE (TAMANHO, COR, ...)*/
+  
+  .roda-pe{
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    padding: 90px;
+    margin-top: 5%; /*separar de uma div pra outra*/
+    height: 450px;
+    width: auto;
+    background-color: #C0705B;
+    color: black;
+    text-align: center;
+    justify-content: center;
+
+    
+  }
+
+.roda-pe .light-mode{
+  background-color:  #C0705B;
+  background-color: #ffffffcc;
+  color: black;
+}
+
+  .roda-pe .dark-mode{
+    background-color:  #C0705B;
+    background-color: black;
+    color: aliceblue;
+  }
+
+/*LINHA BRANCA QUE SEPARA*/
+
+  hr {
+    display: flex;
+    margin-top: 1.5em; /* 1.5em*/
+    margin-bottom: 0.5em;
+    margin-left: auto;
+    margin-right: auto;
+    border-style: inset;
+    border-width: 1px;
+    width: 100%s;
+  }
+
+  hr .dark-mode{
+    background-color: black ;
+    color: aliceblue;
+  }
+
+  /* DIV DOS ATRIBUTOS E DA CLASSIFICAÇÃO DA LOGO*/
+.valores-marca{
+   display: flex;
+   flex-direction: row;
+   align-items: center;
+   justify-content: space-between;
+   margin-right: 3%;
+   padding: 10px;
+   text-align: left;
+   margin-left: 3% ;
+   color: black;
+   margin-top: 1.5%;
+}
+
+#palavra1{ /* PALAVRA SEM VIOLAÇÃO*/
+  text-align: center;
+  justify-content: center;
+  margin-left: 3%;
+  margin-top: 4.5%;
+}
+
+#palavra2{ /*PALAVRA EXCLUSIVO*/
+  margin-left: 3%;
+  margin-top: 4.5%;
+
+}
+
+#palavra3{ /* PALAVRA VEGANO*/
+  margin-left: 3%;
+  margin-top: 4.5%;
+}
+
+#palavra4{ /*PALAVRA NATURAL*/
+  margin-left: 3%;
+  margin-top: 4.5%;
+  
+  
+}
+
+ 
+.logo-rodape{ /*CLASS DA IMAGEM(LOGO)*/
+  display: flex;
+  justify-content: center;
+  margin-right: 4%;
+  align-items: center;
+  margin-top: 3%;
+}
+
+.valores-marca a:hover{
+  box-shadow: none;
+  color: #fff;
+
+}
+
+  /* Estilize o botão "Voltar ao Topo" */
+
+
+#btnTop {
+    display: none; /* Inicialmente, o botão estará oculto */
+    position: fixed;
+    bottom: 20px;
+    right: 30px;
+    z-index: 99;
+    border: none;
+    outline: none;
+    background-color: #333;
+    color: white;
+    cursor: pointer;
+    padding: 15px;
+    border-radius: 50%;
+    justify-content: center;
+    align-items: center;
+}
+#btnTop:hover {
+    background-color: #69564d;
+  }
+  
+  .final{
+    padding: 20px;
+      margin-top: 1.5%;
+  }
